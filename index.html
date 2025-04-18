@@ -1,146 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gaddam Hemanth Kumar | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins', sans-serif;
-    }
-    body {
-      background: linear-gradient(to right, #e3f2fd, #ffffff);
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: #0d47a1;
-      color: #fff;
-      padding: 3rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    section {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    section:hover {
-      transform: translateY(-5px);
-    }
-    h2 {
-      color: #0d47a1;
-      margin-bottom: 1rem;
-    }
-    ul li {
-      margin-bottom: 0.5rem;
-    }
-    a {
-      color: #0d47a1;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-      background: #0d47a1;
-      color: #fff;
-    }
-    .button-link {
-      display: inline-block;
-      background: #0d47a1;
-      color: #fff;
-      padding: 0.6rem 1.2rem;
-      border-radius: 30px;
-      margin-top: 1rem;
-      transition: background 0.3s;
-    }
-    .button-link:hover {
-      background: #1565c0;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Gaddam Hemanth Kumar</h1>
-    <p>🚀 Data Analyst | Web Developer | Founder of foodfLICKS</p>
-    <a href="#contact" class="button-link">Contact Me</a>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaddam Hemanth Kumar | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Space Grotesk', sans-serif;
+      }
+      body {
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+        color: #f1f5f9;
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #3b82f6;
+        border-radius: 10px;
+      }
+      header {
+        background: linear-gradient(to right, #3b82f6, #06b6d4);
+        color: #fff;
+        padding: 3rem 1rem;
+        text-align: center;
+        position: relative;
+      }
+      header h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        animation: fadeInDown 1s ease-in-out;
+      }
+      header p {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+      }
+      .button-link {
+        display: inline-block;
+        background: #3b82f6;
+        color: #fff;
+        padding: 0.8rem 1.5rem;
+        border-radius: 30px;
+        font-weight: 600;
+        transition: all 0.3s;
+        margin-top: 1rem;
+      }
+      .button-link:hover {
+        background: #2563eb;
+        transform: scale(1.05);
+      }
+      .resume-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: #0f172a;
+        color: #f1f5f9;
+        padding: 0.6rem 1rem;
+        border: 2px solid #3b82f6;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+      .resume-btn:hover {
+        background: #3b82f6;
+        color: #fff;
+      }
+      nav {
+        background: #1e293b;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      nav a {
+        color: #94a3b8;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s;
+        position: relative;
+      }
+      nav a:hover {
+        color: #3b82f6;
+      }
+      section {
+        max-width: 900px;
+        margin: 3rem auto;
+        padding: 2rem;
+        background: #1e293b;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+      }
+      h2 {
+        color: #3b82f6;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        position: relative;
+      }
+      ul li {
+        margin-bottom: 0.6rem;
+      }
+      a {
+        color: #38bdf8;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .card {
+        background: #0f172a;
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        border-left: 4px solid #3b82f6;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 18px rgba(59, 130, 246, 0.4);
+      }
+      footer {
+        text-align: center;
+        padding: 1rem;
+        background: #1e293b;
+        color: #94a3b8;
+        margin-top: 4rem;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      input, textarea {
+        padding: 0.8rem;
+        border-radius: 8px;
+        border: none;
+        background: #0f172a;
+        color: #f1f5f9;
+        resize: none;
+      }
+      input:focus, textarea:focus {
+        outline: 2px solid #3b82f6;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Gaddam Hemanth Kumar</h1>
+      <p>🚀 Data Analyst | Web Developer | Founder of foodfLICKS</p>
+      <a href="#contact" class="button-link">Let's Connect</a>
+      <a href="resume.pdf" class="resume-btn" target="_blank"><i class="fas fa-download"></i> Resume</a>
+    </header>
 
-  <section>
-    <h2>👨‍💻 About Me</h2>
-    <p>
-      Hi! I'm Hemanth, a passionate B.Tech graduate in Electronics & Communication Engineering from MITS. I'm the founder of <strong>foodfLICKS</strong> — a reels-based food ordering startup, and I love building cool stuff using data and code. I'm also a national-level fencing champ! 🗡️
-    </p>
-  </section>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-  <section>
-    <h2>🛠️ Skills</h2>
-    <ul>
-      <li>Python, SQL, Data Analysis</li>
-      <li>Web Development (HTML, CSS, JavaScript)</li>
-      <li>Power BI, Excel, Google Sheets</li>
-      <li>Git & GitHub</li>
-      <li>Strong Communication & Team Leadership</li>
-    </ul>
-  </section>
+    <section id="contact" data-aos="fade-up">
+      <h2>📬 Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:gaddamhemanthkumar1104@gmail.com">gaddamhemanthkumar1104@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/hemanthhemu1104" target="_blank">github.com/hemanthhemu1104</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/hemanth-kumar" target="_blank">linkedin.com/in/hemanth-kumar</a></p>
+        <p>Instagram (foodfLICKS): <a href="https://instagram.com/foodf_licks" target="_blank">@foodf_licks</a></p>
+      </div>
+      <div class="card">
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit" class="button-link">Send Message</button>
+        </form>
+      </div>
+    </section>
 
-  <section>
-    <h2>📂 Projects</h2>
-    <ul>
-      <li><strong>foodfLICKS</strong> — Reels-based food ordering app. Watch → Order → Eat 🍔📱</li>
-      <li><strong>FPGA Computer Vision</strong> — Real-time detection system using Verilog HDL.</li>
-      <li><strong>Smart Dustbin</strong> — IoT-based hygienic waste system using Arduino.</li>
-      <li><strong>COVID-19 Data Dashboard</strong> — Data trends visualized using Python.</li>
-    </ul>
-  </section>
+    <footer>
+      <p>© 2025 Gaddam Hemanth Kumar — Built with 💙 and a pinch of ambition</p>
+    </footer>
 
-  <section>
-    <h2>📜 Certifications</h2>
-    <ul>
-      <li>Python – Udemy (May–August)</li>
-      <li>Machine Learning – IBM</li>
-      <li>Azure Application – Microsoft</li>
-      <li>Web Development Internship (2 months)</li>
-      <li>Data Analytics Course (Ongoing)</li>
-      <li>LaTeX International Workshop (Feb 2024)</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>🏅 Achievements</h2>
-    <ul>
-      <li>🏆 Fencing Champion – National, State & District</li>
-      <li>🚀 Founder of foodfLICKS</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>📬 Contact</h2>
-    <p>Email: <a href="mailto:hemanth.gaddam@example.com">hemanth.gaddam@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/hemanthhemu1104" target="_blank">github.com/hemanthhemu1104</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/hemanth-kumar" target="_blank">linkedin.com/in/hemanth-kumar</a></p>
-    <p>Instagram (foodfLICKS): <a href="https://instagram.com/foodf_licks" target="_blank">@foodf_licks</a></p>
-  </section>
-
-  <footer>
-    <p>Made with ❤️ by Gaddam Hemanth Kumar</p>
-  </footer>
-</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
+
